@@ -5,15 +5,14 @@ from nltk.stem.porter import PorterStemmer
 import pickle
 import string
 
-# --- Load Model and Vectorizer (No Change) ---
-# Ensure these files are in the same directory
+# --- Load Model and Vectorizer ---
 try:
-    tfidf = pickle.load(open('Vectorizer.pkl', 'rb'))
-    tfidf1 = pickle.load(open('Vectorizer1.pkl', 'rb'))
-    feature_extraction = pickle.load(open('Vectorizer_spam_mail.pkl','rb'))
-    mnb_model = pickle.load(open('multi_naive_bayes_model.pkl', 'rb'))
-    rf_model = pickle.load(open('random_forest_model.pkl', 'rb'))
-    lr_model = pickle.load(open('logistic_reg_model.pkl', 'rb'))
+    tfidf = pickle.load(open('sms_classifier/Vectorizer.pkl', 'rb'))
+    tfidf1 = pickle.load(open('sms_classifier/Vectorizer1.pkl', 'rb'))
+    feature_extraction = pickle.load(open('mail_classifier/Vectorizer_spam_mail.pkl','rb'))
+    mnb_model = pickle.load(open('sms_classifier/multi_naive_bayes_model.pkl', 'rb'))
+    rf_model = pickle.load(open('sms_classifier/random_forest_model.pkl', 'rb'))
+    lr_model = pickle.load(open('mail_classifier/logistic_reg_model.pkl', 'rb'))
 
 except Exception as e:
     st.error(f"An error occurred while loading files: {e}")
