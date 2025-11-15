@@ -10,6 +10,8 @@ Both classifiers are trained using **TF-IDF Vectorization** and evaluated with m
 A Streamlit application (`app.py`) loads the saved vectorizers and trained models to provide real-time spam predictions.
 
 ## 📂 Project Structure
+```text
+.
 /mail_classifier
     ├── spam_mail_classifier.ipynb 
     ├── mail_vectorizer.pkl
@@ -22,7 +24,7 @@ A Streamlit application (`app.py`) loads the saved vectorizers and trained model
     
 /deployment
     └── app.py
-
+```
 ---
 
 ## 🔍 File Descriptions
