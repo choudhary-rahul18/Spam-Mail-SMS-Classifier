@@ -10,7 +10,18 @@ Both classifiers are trained using **TF-IDF Vectorization** and evaluated with m
 A Streamlit application (`app.py`) loads the saved vectorizers and trained models to provide real-time spam predictions.
 
 ## 📂 Project Structure
-. ├── /mail_classifier │ ├── spam_mail_classifier.ipynb │ ├── mail_vectorizer.pkl │ └── mail_model.pkl │ ├── /sms_classifier │ ├── sms_spam_classifier.ipynb │ ├── sms_vectorizer.pkl │ └── sms_model.pkl │ ├── /deployment │ └── app.py │ └── /datasets ├── sms_dataset.csv └── mail_dataset.csv
+/mail_classifier
+    ├── spam_mail_classifier.ipynb 
+    ├── mail_vectorizer.pkl
+    └── mail_model.pkl
+    
+/sms_classifier
+    ├── sms_spam_classifier.ipynb
+    ├── sms_vectorizer.pkl
+    └── sms_model.pkl
+    
+/deployment
+    └── app.py
 
 ---
 
@@ -23,7 +34,6 @@ A Streamlit application (`app.py`) loads the saved vectorizers and trained model
 | `..._vectorizer.pkl` | Serialized TF-IDF vectorizer trained on the respective dataset. |
 | `..._model.pkl` | Final trained model (e.g., Logistic Regression, Naive Bayes) chosen after evaluation. |
 | `app.py` | The Streamlit application script used for deploying the classifier. |
-| `/datasets` | Folder containing the SMS and Email datasets used for training. |
 
 ---
 
