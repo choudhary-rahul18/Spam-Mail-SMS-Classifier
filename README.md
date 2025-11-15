@@ -43,6 +43,31 @@ A Streamlit application (`app.py`) loads the saved vectorizers and trained model
 | `app.py` | The Streamlit application script used for deploying the classifier. |
 
 ---
+## 🎯 Why Precision Was Our Priority
+
+For spam detection tasks, predicting a normal message as spam (a **False Positive**) is more harmful than letting a real spam message through (a **False Negative**).
+
+A false positive means:
+* Important messages may get marked as spam.
+* Emails or SMS that users are expecting might be blocked.
+* The overall user experience gets worse.
+
+Therefore, during model selection, **precision** was given higher importance than overall accuracy.
+
+> **Precision:** Among all messages predicted as spam, how many were *actually* spam?
+
+High precision ensures that the model marks a message as spam only when it is very confident, minimizing the number of false positives.
+
+--
+## 📊 Model Performance
+
+| Model | Accuracy | Precision (Spam Class) |
+| :--- | :--- | :--- |
+| **Logistic Regression** | 0.9668 | **1.0000** |
+| **Multinomial Naive Bayes** | 0.9729 | 0.9916 |
+| **Random Forest Classifier**| 0.9700 | 0.9913 |
+
+--
 
 ## ⚙️ Installation & Setup
 
