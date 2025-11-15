@@ -13,17 +13,22 @@ A Streamlit application (`app.py`) loads the saved vectorizers and trained model
 ```text
 .
 /mail_classifier
+    ├── mail_data.csv
     ├── spam_mail_classifier.ipynb 
-    ├── mail_vectorizer.pkl
-    └── mail_model.pkl
+    ├── Vectorizer_spam_mail.pkl
+    └── logistic_reg_model.pkl
     
 /sms_classifier
+    ├── spam.csv
     ├── sms_spam_classifier.ipynb
-    ├── sms_vectorizer.pkl
-    └── sms_model.pkl
+    ├── Vectorizer.pkl
+    ├── Vectorizer1.pkl
+    ├── random_forest_model.pkl
+    └── multi_naive_bayes_model.pkl
     
 /deployment
     └── app.py
+    └── requirements.txt
 ```
 ---
 
